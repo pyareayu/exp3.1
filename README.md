@@ -53,3 +53,40 @@ A simple web application that collects student details via an HTML form and disp
 ### 🌐 Run Steps
 1. Open in Eclipse → **Run on Server**
 2. Visit:  
+# 🧾 Employee Records Web Application
+
+A simple **Java EE (Jakarta EE)** web application built using **Servlets**, **JSP**, and **MySQL** to manage and view employee details.  
+This project demonstrates CRUD-like operations, servlet handling, and JDBC connectivity using the **Model-View-Controller (MVC)** design approach.
+
+---
+
+## 🚀 Features
+
+- View all employees stored in the database  
+- Search employee details by ID  
+- Display employee name, ID, and salary  
+- Error handling for invalid or missing input  
+- JDBC connection utility for database access  
+- Deployed on **Apache Tomcat v10+**
+
+---
+
+## 🏗️ Project Structure
+
+EmployeeRecordsApp/
+│
+├── src/main/java/
+│ └── com/employee/
+│ ├── EmployeeServlet.java # Main servlet to fetch and display employee data
+│ └── util/
+│ └── DBUtil.java # JDBC utility class for database connection
+│
+├── src/main/webapp/
+│ ├── employeeSearch.html # Search page for employees
+│ ├── WEB-INF/
+│ │ ├── web.xml # Servlet mapping configuration
+│ │ └── lib/ # MySQL connector JAR file
+│ └── META-INF/
+│
+├── pom.xml / build files (if applicable)
+└── README.md
